@@ -1,0 +1,66 @@
+
+/* Style pour le paragraphe */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Ajustement dans la page */
+  .contain {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+h3 {
+    font-size: 20px; /* Taille de la police */
+    color: #777; /* Couleur du texte */
+    font-weight: bold; /* Gras */
+    margin-bottom: 5px; /* Marge en bas du titre pour séparer du contenu suivant */
+    text-align: center;
+  }
+img {
+    width: 100%; /* Adjust the percentage to reduce the image size */ 
+    height: 50% ;
+  }
+ .card-img{
+    width: 93%; /* Adjust the percentage to reduce the image size */ 
+    height: 50% ;
+    margin-left: 40px;
+  }
+  
+td {
+    padding: 8px; /* Add some padding for spacing inside the table cells */
+    border-right: 1px solid #ccc;
+}
+
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust this value to control the table's vertical position on the page */
+}
+.card-img-toppp {
+    width: 12%; /* Adjust the percentage to decrease the image size */
+}
+.card-img-topp {
+    width: 10%; /* Adjust the percentage to decrease the image size */
+}
+.card-img-top {
+    width: 27%; /* Adjust the percentage to decrease the image size */
+}
+
+
+/* CSS pour la balise <video> */
+video {
+    width: 100%; /* Ajuste la largeur de la vidéo pour qu'elle occupe la largeur de son conteneur */
+    max-width: 800px; /* Définit une largeur maximale pour la vidéo (ajustez selon vos besoins) */
+    height: auto; /* Ajuste automatiquement la hauteur pour conserver les proportions d'origine */
+    display: block; /* Permet de centrer la vidéo horizontalement sur la page */
+    margin: 0 auto; /* Centre la vidéo horizontalement */
+  }
+  

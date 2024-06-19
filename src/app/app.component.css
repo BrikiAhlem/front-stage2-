@@ -1,0 +1,10 @@
+.card-translate {
+    transform: translateX(120px);
+  }
+  h3 {
+    font-size: 20px; /* Taille de la police */
+    color: #777; /* Couleur du texte */
+    font-weight: bold; /* Gras */
+    margin-bottom: 5px; /* Marge en bas du titre pour séparer du contenu suivant */
+    text-align: center;
+  }

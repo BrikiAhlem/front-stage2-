@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="containe">
+    <input [(ngModel)]="searchText" class="filter-input" placeholder="Filter by Make" (input)="applyFilters()">
+    <input [(ngModel)]="filterByMake" class="filter-input" placeholder="Search" (input)="applyFilters()">
+  </div>
+
+<p-table [value]="data" [value]="filteredData" [paginator]="true" [rows]="itemsPerPage" [totalRecords]="filteredData.length" (onPage)="onPageChange($event)">
+  <ng-template pTemplate="header" [value]="filteredData">
+    <tr>
+      <th>Vehicle Make</th>
+      <th>Vehicle Model</th>
+      <th>Vehicle version</th>
+      <th>Drivetrain Power (HP)</th>
+      <th>performanceAcceleration</th>
+      <th>performanceTopspeed</th>
+      <th>rangeWLTP </th>
+      <th>rangeReal</th>
+      <th>efficiencyReal </th>
+      <th>chargePlug</th>
+      <th>chargeStandardPower</th>
+      <th>chargeStandardPhase</th>
+      <th>chargeStandardPhaseAmp</th>
+      <th>fastChargePlug</th>
+      <th>fastChargePowerMax</th>
+      <th>batteryCapacityFull</th>
+      <th>image</th>        
+    
+      <!-- Ajoutez les autres en-têtes de colonne ici -->
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-vehicle>
+    <tr>
+      <td>{{ vehicle.vehicleMake }}</td>
+      <td>{{ vehicle.vehicleModel }}</td>
+      <td>{{ vehicle.vehicleModelVersion }}</td>
+      <td>{{ vehicle.drivetrainPowerHP }}</td>
+      <td>{{ vehicle.performanceAcceleration }}</td>
+      <td>{{ vehicle.performanceTopspeed }}</td>
+      <td>{{ vehicle.rangeWLTP }}</td>
+      <td>{{ vehicle.rangeReal }}</td>
+      <td>{{ vehicle.efficiencyReal }}</td>
+      <td>{{ vehicle.chargePlug }}</td>
+      <td>{{ vehicle.chargeStandardPower }}</td>
+       <td>{{ vehicle.chargeStandardPhase }}</td>
+      <td>{{ vehicle.chargeStandardPhaseAmp }}</td>
+      <td>{{ vehicle.fastChargePlug }}</td>
+      <td>{{ vehicle.fastChargePowerMax }}</td>
+      <td>{{ vehicle.batteryCapacityFull }}</td>
+      
+      <td> <img [src]=" vehicle.images" alt="Image" > </td>  
+      
+      
+      <!-- Ajoutez les autres colonnes de données ici -->
+    </tr>
+  </ng-template>
+  
+</p-table>
+</div>

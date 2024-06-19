@@ -1,0 +1,116 @@
+.search-box,
+.filter-box {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 0 #0088FF; 
+
+  
+}
+.filter-box {
+    box-shadow: 0 0 5px 0 #0088FF; /* Couleur grise */
+margin-left: 27px ;
+ }
+.search-box input,
+.filter-box input {
+  margin-right: 10px; /* Ajustez la valeur selon votre préférence */
+}
+
+.search-box , filter-box{
+  position: absolute;
+  top:6;
+  right: 0;
+}
+/* Réinitialisation des styles pour assurer la cohérence */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style pour les champs de filtrage */
+.filter-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Style pour le tableau */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Style pour les images dans le tableau */
+td img {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Style pour les en-têtes de colonne */
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Style pour les lignes de données impaires */
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Style pour les lignes de données au survol */
+tr:hover {
+  background-color: #e6e6e6;
+}
+
+/* Appliquer un style général pour les éléments input avec la classe "filter-input" */
+.filter-input {
+  width: 200px; /* Ajuster la largeur comme souhaité */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Appliquer une mise en évidence de boîte bleue pour le focus */
+.filter-input:focus {
+  outline: none;
+  border-color: blue;
+  box-shadow: 0 0 5px blue;
+}
+
+/* Utiliser flexbox pour mettre les deux zones de texte sur la même ligne */
+.containe{
+  display: flex;
+}
+
+/* Espacement entre les deux zones de texte */
+.filter-input + .filter-input {
+  margin-left: 10px;
+}

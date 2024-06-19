@@ -1,0 +1,76 @@
+/* Pour le conteneur de la carte */
+.card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Pour le splitter */
+  .p-splitter {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Pour les deux panneaux dans le splitter */
+  .p-splitter-panel {
+    padding: 10px;
+  }
+  
+  /* Style personnalisé pour le panneau gauche contenant le menu */
+  .p-splitter-panel:nth-child(1) {
+    background-color: #f5f5f5;
+  }
+  
+  /* Style personnalisé pour le panneau droit */
+  .p-splitter-panel:nth-child(2) {
+    background-color: #ffffff;
+  }
+  
+  /* Pour le menu */
+  .p-panelmenu {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  /* Pour les éléments de menu */
+  .p-panelmenu .p-panelmenu-header,
+  .p-panelmenu .p-menuitem-link {
+    color: #333;
+  }
+  
+  .p-panelmenu .p-panelmenu-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .p-panelmenu .p-panelmenu-header {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .p-panelmenu .p-menuitem-link:hover,
+  .p-panelmenu .p-menuitem-link:focus {
+    background-color: #ddd;
+  }
+  
+  /* Pour le panneau droit */
+  .p-splitter-panel:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Pour le contenu dans le panneau droit */
+  .p-splitter-panel:nth-child(2) .col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Ajoutez d'autres styles personnalisés selon vos besoins */
+  
